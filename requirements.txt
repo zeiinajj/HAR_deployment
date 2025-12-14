@@ -1,9 +1,17 @@
+# Core
 streamlit==1.52.1
-numpy==2.3.5
+
+# Numerical & Data
+numpy==1.27.0
 pandas==2.3.3
-scikit-learn==1.8.0
 scipy==1.16.3
-matplotlib==3.8.1
+scikit-learn==1.8.0
+
+# Visualization
+matplotlib==3.7.2
 seaborn==0.12.2
 altair==6.0.0
 pydeck==0.9.1
+
+# Optional but commonly needed
+rich==14.2.0
