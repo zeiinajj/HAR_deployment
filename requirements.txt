@@ -77,7 +77,7 @@ pydeck==0.9.1
 pyenchant==3.2.2
 PyGObject==3.54.5
 pyinotify==0.9.6
-pykickstart @ file:///builddir/build/BUILD/pykickstart-3.66-build/pykickstart-3.66
+pykickstart==3.66
 pyOpenSSL==25.1.0
 pyparted==3.13.0
 PySocks==1.7.1
