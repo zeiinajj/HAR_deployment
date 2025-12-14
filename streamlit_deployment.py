@@ -4,7 +4,8 @@ import numpy as  np
 import joblib
 
 scaler = joblib.load('scaler.pkl')
-model = joblib.load('random_forest_model.pkl')
+pca = joblib.load('pca.pkl')
+model = joblib.load('SGD_model.pkl')
 features = pd.read_csv("features.txt", sep="\s+", header=None, usecols=[1])
 class_names = {
     0: 'WALKING',
@@ -31,6 +32,7 @@ if uploaded_file is not None:
         st.dataframe(df.head())
         
         x_scaled = scaler.transform(df)
+        x_scaled = pca.transform(x_scaled)
         
         y_pred = model.predict(x_scaled)
         y_pred_proba = model.predict_proba(x_scaled)
