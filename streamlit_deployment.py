@@ -8,12 +8,12 @@ pca = joblib.load('pca.pkl')
 model = joblib.load('SGD_model.pkl')
 features = pd.read_csv("features.txt", sep="\s+", header=None, usecols=[1])
 class_names = {
-    0: 'WALKING',
-1 :'WALKING_UPSTAIRS',
-2 :'WALKING_DOWNSTAIRS',
-3 :'SITTING',
-4 :'STANDING',
-5 :'LAYING',
+    1: 'WALKING',
+2 :'WALKING_UPSTAIRS',
+3 :'WALKING_DOWNSTAIRS',
+4 :'SITTING',
+5 :'STANDING',
+6 :'LAYING',
 }
 
 st.title("human activity recognition")
